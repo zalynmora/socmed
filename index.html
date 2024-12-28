@@ -1,0 +1,517 @@
+<title>News Feed</title>
+<link rel="stylesheet" href="newsfeed.css">
+
+<nav>
+    <div class="container">
+        
+        <div class="search-bar">
+            <i class="uil uil-search"></i>
+            <input
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+        <div class="create">
+            <label class="btn btn-primary" for="create-post">Create</label>
+            <div class="profile-pic">
+                <img src="images/profile-1.jpg" alt="pic 1" />
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="main">
+    <div class="container">
+        <div class="left">
+            <a class="profile">
+                <div class="profile-pic">
+                    <img src="images/profile-1.jpg" />
+                </div>
+                <div class="handle">
+                    <h4>Rizalyn Mora</h4>
+                    <p class="text-muted">@morariza</p>
+                </div>
+            </a>
+            <div class="sidebar">
+                <a class="menu-item active">
+                    <span><i class="uil uil-home"></i></span>
+                    <h3>Home</h3>
+                </a>
+                <a class="menu-item" id="notifications">
+                    <span><i class="uil uil-bell">
+                        <small class="notification-count">9+</small></i></span>
+                    <h3>Notifications</h3>
+                    <div class="notifications-popup">
+                        <div>
+                            <div class="profile-pic">
+                                <img src="images/profile-2.jpg" />
+                            </div>
+                            <div class="notification-body">
+                                <b>Harry Potter</b> accepted your friend request
+                                <small class="text-muted">2 DAYS AGO</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-pic">
+                                <img src="https://i.pinimg.com/474x/e1/d6/32/e1d632b7d8ba9ffd34318a09ddf1b275.jpg" />
+                            </div>
+                            <div class="notification-body">
+                                <b>Nymphadora Tonks</b> commented on your post
+                                <small class="text-muted">1 HOUR AGO</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-pic">
+                                <img src="https://i.pinimg.com/280x280_RS/60/72/af/6072af5d0841567c677a9e7597501563.jpg" />
+                            </div>
+                            <div class="notification-body">
+                                <b>Molly Weasley</b> and 210 other liked your post
+                                <small class="text-muted">4 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-pic">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx7jXK7iCNJK_u4XvbwTkXPx140LlR1qh2XoihxvkMgM2ZvViJaIxaPFleTUJ7SBp9xBw&usqp=CAU" />
+                            </div>
+                            <div class="notification-body">
+                                <b>Hermione Granger</b> started following you
+                                <small class="text-muted"> 11 HOURS AGO</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="menu-item" id="messages-notifications">
+                    <span>
+                <i class="uil uil-envelope">
+                  <small class="notification-count">6</small>
+                </i>
+              </span>
+                    <h3>Messages</h3>
+                </a>
+                <label class="btn btn-primary" for="create-post">Create Post</label>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="stories">
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="images/profile-1.jpg" alt="" />
+                    </div>
+                    <p class="name">Your Story</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx7jXK7iCNJK_u4XvbwTkXPx140LlR1qh2XoihxvkMgM2ZvViJaIxaPFleTUJ7SBp9xBw&usqp=CAU" alt="" />
+                    </div>
+                    <p class="name">Hermione Granger</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/736x/1f/6f/d7/1f6fd7118d2c870236ef17544fd6f140.jpg" alt="" />
+                    </div>
+                    <p class="name">Ginny Weasley</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/236x/95/c4/96/95c496f64dd0e4c6f75f96c0abbbea6b.jpg" alt="" />
+                    </div>
+                    <p class="name">Luna Lovegood</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/736x/6d/4b/de/6d4bde9293ac23d4711c828859af20e4.jpg" alt="" />
+                    </div>
+                    <p class="name">Bellatrix Lestrange</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="https://64.media.tumblr.com/7b28774544438d73ca8c1daad11402e0/88958e5f55a67155-fd/s250x400/a9ef3dad54f6c57a53fdeef1a793f0143a9aea27.jpg" alt="" />
+                    </div>
+                    <p class="name">Dolores Umbridge</p>
+                </div>
+            </div>
+
+            <form class="create-post">
+                <div class="profile-pic">
+                    <img src="images/profile-1.jpg" alt="" />
+                </div>
+                <input
+              type="text"
+              placeholder="What's on your mind?"
+              id="create-post"
+            />
+                <input type="submit" value="Post" class="btn btn-primary" />
+            </form>
+
+            <div class="feeds">
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="https://64.media.tumblr.com/7b28774544438d73ca8c1daad11402e0/88958e5f55a67155-fd/s250x400/a9ef3dad54f6c57a53fdeef1a793f0143a9aea27.jpg" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Dolores Umbridge</h3>
+                            <small>Dubai, 15 MINUTES AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="https://png.pngtree.com/background/20230512/original/pngtree-nature-background-sunset-wallpaer-with-beautiful-flower-farms-picture-image_2503007.jpg" alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="https://res.cloudinary.com/freecodez/image/upload/v1698067298/images/fy8azbqxhgdrbbijhipe.webp" /></span>
+                        <span><img src="https://64.media.tumblr.com/7b28774544438d73ca8c1daad11402e0/88958e5f55a67155-fd/s250x400/a9ef3dad54f6c57a53fdeef1a793f0143a9aea27.jpg" /></span>
+                        <span><img src="https://64.media.tumblr.com/2d678d77b051ee352d722d1f7fd2c029/88958e5f55a67155-7d/s250x400/74d69559d55329719bb0a50d8e9d77cbf0ec6da0.jpg" /></span>
+                        ,
+                        <p>Liked by <b>Minerva McGonagall</b> and <b>220 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Dolores Umbridge</b>Lorem ipsum dolor storiesquiquam eius.
+                            <span class="hash-tag">#lifestyle</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 130 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="images/profile-2.jpg" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Harry Potter</h3>
+                            <small>New York, 1 HOUR AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="https://img.freepik.com/premium-photo/lavender-field-with-tree-field-beautiful-image-lavender-field-summer-sunset-landscape_995887-2689.jpg" alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="https://res.cloudinary.com/freecodez/image/upload/v1698067298/images/fy8azbqxhgdrbbijhipe.webp" /></span>
+                        <span><img src="https://64.media.tumblr.com/7b28774544438d73ca8c1daad11402e0/88958e5f55a67155-fd/s250x400/a9ef3dad54f6c57a53fdeef1a793f0143a9aea27.jpg" /></span>
+                        <span><img src="https://64.media.tumblr.com/2d678d77b051ee352d722d1f7fd2c029/88958e5f55a67155-7d/s250x400/74d69559d55329719bb0a50d8e9d77cbf0ec6da0.jpg" /></span>
+                        ,
+                        <p>Liked by <b>Minerva McGonagall</b> and <b>188 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Harry Potter</b>Lorem ipsum dolor storiesquiquam eius.
+                            <span class="hash-tag">#lifestyle</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 40 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="https://64.media.tumblr.com/7b28774544438d73ca8c1daad11402e0/88958e5f55a67155-fd/s250x400/a9ef3dad54f6c57a53fdeef1a793f0143a9aea27.jpg" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Dolores Umbridge</h3>
+                            <small>Amsterdam, 7 HOURS AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="https://img.freepik.com/premium-photo/ai-generated-lavender-field-with-bridge-background_812649-829.jpg" alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="https://res.cloudinary.com/freecodez/image/upload/v1698067298/images/fy8azbqxhgdrbbijhipe.webp" /></span>
+                        <span><img src="https://64.media.tumblr.com/7b28774544438d73ca8c1daad11402e0/88958e5f55a67155-fd/s250x400/a9ef3dad54f6c57a53fdeef1a793f0143a9aea27.jpg" /></span>
+                        <span><img src="https://64.media.tumblr.com/2d678d77b051ee352d722d1f7fd2c029/88958e5f55a67155-7d/s250x400/74d69559d55329719bb0a50d8e9d77cbf0ec6da0.jpg" /></span>
+                        ,
+                        <p>Liked by <b>Minerva McGonagall</b> and <b>130 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Dolores Umbridge</b>Lorem ipsum dolor storiesquiquam eius.
+                            <span class="hash-tag">#lifestyle</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 15 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="https://64.media.tumblr.com/2d678d77b051ee352d722d1f7fd2c029/88958e5f55a67155-7d/s250x400/74d69559d55329719bb0a50d8e9d77cbf0ec6da0.jpg" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Minerva McGonagall</h3>
+                            <small>USA, 3 HOURS AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="https://wallpapers.com/images/hd/beautiful-nature-pictures-qjcss5r32ziry34t.jpg" alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="https://res.cloudinary.com/freecodez/image/upload/v1698067298/images/fy8azbqxhgdrbbijhipe.webp" /></span>
+                        <span><img src="https://64.media.tumblr.com/7b28774544438d73ca8c1daad11402e0/88958e5f55a67155-fd/s250x400/a9ef3dad54f6c57a53fdeef1a793f0143a9aea27.jpg" /></span>
+                        <span><img src="https://64.media.tumblr.com/2d678d77b051ee352d722d1f7fd2c029/88958e5f55a67155-7d/s250x400/74d69559d55329719bb0a50d8e9d77cbf0ec6da0.jpg" /></span>
+                        ,
+                        <p>Liked by <b>You</b> and <b>280 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Minerva McGonagall</b>Lorem ipsum dolor storiesquiquam eius.
+                            <span class="hash-tag">#lifestyle</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 110 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="messages">
+                <div class="heading">
+                    <h4>Messages</h4>
+                    <span><i class="uil uil-edit"></i></span>
+                </div>
+
+                <div class="search-bar">
+                    <span><i class="uil uil-search"></i></span>
+                    <input
+                type="text"
+                placeholder="Search Messages"
+                id="message-search"
+              />
+                </div>
+
+                <div class="category">
+                    <h6 class="active">Primary</h6>
+                    <h6>General</h6>
+                    <h6 class="message-requests">Requests(7)</h6>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="https://64.media.tumblr.com/2d678d77b051ee352d722d1f7fd2c029/88958e5f55a67155-7d/s250x400/74d69559d55329719bb0a50d8e9d77cbf0ec6da0.jpg" />
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Minerva McGonagall</h5>
+                        <p class="text-muted">Hey, how’s it going?</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="https://64.media.tumblr.com/7b28774544438d73ca8c1daad11402e0/88958e5f55a67155-fd/s250x400/a9ef3dad54f6c57a53fdeef1a793f0143a9aea27.jpg" />
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Dolores Umbridge</h5>
+                        <p class="text-bold">2 New Messages</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="images/profile-2.jpg" />
+                    </div>
+                    <div class="message-body">
+                        <h5>Harry Potter</h5>
+                        <p class="text-muted">The wand chooses the wizard.</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx7jXK7iCNJK_u4XvbwTkXPx140LlR1qh2XoihxvkMgM2ZvViJaIxaPFleTUJ7SBp9xBw&usqp=CAU" />
+                    </div>
+                    <div class="message-body">
+                        <h5>Hermione Granger</h5>
+                        <p class="text-muted">Logic will always win in the end.</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/236x/95/c4/96/95c496f64dd0e4c6f75f96c0abbbea6b.jpg" />
+                    </div>
+                    <div class="message-body">
+                        <h5>Luna Lovegood</h5>
+                        <p class="text-muted">It's a very peculiar day, isn't it?</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/736x/6d/4b/de/6d4bde9293ac23d4711c828859af20e4.jpg" />
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Bellatrix Lestrange</h5>
+                        <p class="text-bold">3 New Messages</p>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-requests">
+                <h4>Requests</h4>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-pic">
+                            <img src="https://i.pinimg.com/736x/6d/4b/de/6d4bde9293ac23d4711c828859af20e4.jpg" />
+                        </div>
+                        <div>
+                            <h5>Bellatrix Lestrange</h5>
+                            <p class="text-muted">8 mutual friends</p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn">Decline</button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-pic">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx7jXK7iCNJK_u4XvbwTkXPx140LlR1qh2XoihxvkMgM2ZvViJaIxaPFleTUJ7SBp9xBw&usqp=CAU" />
+                        </div>
+                        <div>
+                            <h5>Hermione Granger</h5>
+                            <p class="text-muted">2 mutual friends</p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn">Decline</button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-pic">
+                            <img src="https://i.pinimg.com/550x/91/7b/a7/917ba7b03ab2aa2fab7b1b3a83a00be3.jpg" />
+                        </div>
+                        <div>
+                            <h5>Lavender Brown</h5>
+                            <p class="text-muted">1 mutual friend</p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script>
+    // https://freecodez.com
+//sidebar
+const menuItems = document.querySelectorAll(".menu-item");
+const messagesNotification = document.querySelector("#messages-notifications");
+const messages = document.querySelector(".messages");
+const message = messages.querySelectorAll(".message");
+const messageSearch = document.querySelector("#message-search");
+
+//remove active class from all menu items
+const changeActiveItem = () => {
+    menuItems.forEach((item) => {
+        item.classList.remove("active");
+    });
+};
+
+menuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        changeActiveItem();
+        item.classList.add("active");
+
+        if (item.id != "notifications") {
+            document.querySelector(".notifications-popup").style.display = "none";
+        } else {
+            document.querySelector(".notifications-popup").style.display = "block";
+            document.querySelector(
+                "#notifications .notification-count"
+            ).style.display = "none";
+        }
+    });
+});
+
+const searchMessage = () => {
+    const val = messageSearch.value.toLowerCase();
+    message.forEach((chat) => {
+        let name = chat.querySelector("h5").textContent.toLowerCase();
+        if (name.indexOf(val) != -1) {
+            chat.style.display = "flex";
+        } else {
+            chat.style.display = "none";
+        }
+    });
+};
+
+messageSearch.addEventListener("keyup", searchMessage);
+
+messagesNotification.addEventListener("click", () => {
+    messages.style.boxShadow = "0 0 1rem var(--color-primary)";
+    messagesNotification.querySelector(".notification-count").style.display =
+        "none";
+    setTimeout(() => {
+        messages.style.boxShadow = "none";
+    }, 2000);
+});
+
+</script>
